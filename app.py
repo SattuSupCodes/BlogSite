@@ -8,5 +8,5 @@ app.secret_key="your_secret_key"
 
 # configure sql alchemy to work with flask
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///users.db"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=False
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"]=True
 db= SQLAlchemy(app)
