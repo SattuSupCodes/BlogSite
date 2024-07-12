@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogsite</title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Create a Blog Post</h1>
+    <form id="blogForm">
+        <input type="text" id="title" placeholder="Blog Title" required>
+        <div id="editor-container"></div>
+        <button type="submit">Post Blog</button>
+    </form>
+    <h1>Blog Posts</h1>
+    <div id="blogs"></div>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
+
+<!--this is just the skeleton of code, later we will inherit and use jinja and 
+code our blog writing section-->
